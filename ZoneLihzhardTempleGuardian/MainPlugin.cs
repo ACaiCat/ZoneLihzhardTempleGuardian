@@ -88,7 +88,7 @@ namespace 阻止进入神庙
                     Thread.Sleep(Utils.Config.checkTime);
                     foreach (var plr in TShock.Players)
                     {
-                        if (plr != null && plr.Active && plr.Dead && !plr.HasPermission("ZoneLihzhardTempleCheck.ignore"))
+                        if (plr != null && plr.Active && !plr.Dead && !plr.HasPermission("ZoneLihzhardTempleCheck.ignore"))
                         {
                             //Console.WriteLine("是否神庙:" + Utils.isInZoneLihzhardTemple(plr));
                             //Console.WriteLine("是否越进度:" + !Utils.checkProgress());
